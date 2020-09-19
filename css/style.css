@@ -325,7 +325,9 @@ body{
 			.about__body {
 			  text-align: center;
 			  max-width: 900px;
-			  margin: 0px auto; }
+			  margin: 0px auto;
+			  padding: 50px 0 0 0; }
+			  
 			.about__row {
 			  display: -webkit-box;
 			  display: -moz-box;
