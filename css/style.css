@@ -115,16 +115,19 @@ body{
 	}
 	.hi__body {
 		text-align: center;
-		padding: 60px 20px 30px 20px;
+		padding: 80px 20px 30px 20px;
 	}
 	.hi__title {
-		font-size: 40px;
+		font-size: 45px;
 		margin: 0 0 10px 0;
 	}
 
 	.hi__subtitle{
-		font-size: 24px;
+		font-size: 21px;
 		margin: 0 0 10px 0;
+	}
+	.hi__subname{
+		font-size: 30px;
 	}
 }
 .menu__body {
@@ -388,9 +391,9 @@ body{
 				  margin: 0px 0px 15px 0px; } }
 			.about__text {
 			  color: #868585;
-			  font-size: 14px;
-			  font-weight: 300;
-			  line-height: 26px; }
+			  font-size: 16px;
+			  font-weight: 500;
+			  line-height: 25px; }
 
 			  .header-block {
 				text-align: center; }
@@ -413,14 +416,14 @@ body{
 				.header-block__subtitle {
 				  padding: 30px 0px 0px 0px;
 				  color: #868585;
-				  font-size: 14px;
-				  font-weight: 300;
-				  line-height: 25.89px;
+				  font-size: 16px;
+				  font-weight: 500;
+				  line-height: 25px;
 				  max-width: 700px;
-				  margin: 0px auto; }
+				  margin: 0 auto; }
 				  @media(max-width: 767.98px){
 					.header-block__title{
-						font-size: 28px;
+						font-size: 25px;
 					}
 					.header-block__subtitle{
 						margin: 0 10px;
@@ -504,8 +507,10 @@ body{
 
 					}
 					.mask__subtitle {
-						text-align: center;
-						font-size: 20px;
+						text-align: left;
+						font-size: 16px;
+						line-height: 1.55;
+						max-width: 300px;
 					}
 					.mask__video video {
 						width: 250px;
