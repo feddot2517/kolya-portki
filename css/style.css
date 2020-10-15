@@ -401,7 +401,7 @@ body{
 				text-align: center; }
 				.header-block__title {
 				  font-size: 34px;
-				  font-weight: 700;
+				  font-weight: 900;
 				  letter-spacing: 8.95px;
 				  text-transform: uppercase;
 				  position: relative;
@@ -850,6 +850,8 @@ body{
 					  transform: scale(1); }
 					.btn.fw {
 					  width: 100%; }
+					 
+					
 
 				 .select-block {
 					position: relative; }

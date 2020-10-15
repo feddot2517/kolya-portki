@@ -548,7 +548,7 @@
 										<img src="/img/models3.jpg" alt="">
 										<div class="models__item-text">
 											<div class="text">
-												<p>3D Модель "mug of tea"</p>
+												<p>3D Модель "tropical island"</p>
 											</div>
 										</div>
 									</div>
@@ -572,22 +572,26 @@
 										<div class="form-contacts__column">
 											<div class="form-contacts__input">
 												<div class="form-contacts__label">Ваше Имя</div>
-												<input autocomplete="off" type="text" name="name" data-value="" class="input req" />
+												<input id="input_name" autocomplete="off" required type="text" name="name"
+													data-value="" class="input req" />
 											</div>
 										</div>
 										<div class="form-contacts__column">
 											<div class="form-contacts__input">
 												<div class="form-contacts__label">Ваш e-mail</div>
-												<input autocomplete="off" type="text" name="email" data-value=""
+												<input autocomplete="off" required type="text" name="email" data-value=""
 													class="input req email" />
 											</div>
 										</div>
 									</div>
 									<div class="form-contacts__input">
 										<div class="form-contacts__label">Сообщение</div>
-										<textarea autocomplete="off" name="message" data-value="" class="input"></textarea>
+										<textarea autocomplete="off" required name="message" data-value=""
+											class="input"></textarea>
 									</div>
-									<button type="submit" class="form-contacts__btn btn btn_b"><span>Отправить</span></button>
+									<button type="submit" class="form-contacts__btn btn btn_b"
+										onClick="if (document.getElementById('input_name').value!==''){this.disabled=true;this.form.submit();document.getElementById('send').innerHTML='Заявка отправлена'}"><span
+											id="send">Отправить</span></button>
 								</div>
 							</form>
 						</div>
