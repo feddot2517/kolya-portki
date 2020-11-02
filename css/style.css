@@ -40,7 +40,7 @@ background: white;
 /*--------------------*/
 
 body{
-	font-family: Pompadur;
+	font-family: OpenSans;
 }
 
 .wrapper {
@@ -53,7 +53,8 @@ body{
 	flex: 1 1 auto;
 }
 .hi {
-	background-color: #0073F3;
+	font-family: "Montserrat";
+	background: #1A83F3;
 	padding: 50px 0;
 	margin: 0 0 50px 0;
 }
@@ -69,14 +70,18 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-transform: uppercase;
+	font-weight: 600;
 	text-align: right;
 	color: #fff;
 	padding: 0 30px 0 0;
 }
 .hi__title {
-	font-size: 90px;
-	margin: 0 0 10px 0;
+	font-size: 75px;
+	margin: 0 0 20px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 3.5px #ffffff;
 }
 
 .hi__subtitle{
@@ -84,12 +89,9 @@ body{
 	margin: 0 0 10px 0;
 }
 
-.hi__subtitle span{
-	color: #F8A62F
-}
-
 .hi__subname{
 	font-size: 35px;
+	text-transform: capitalize;
 }
 .hi__image img{
 	width: 450px;
@@ -120,6 +122,7 @@ body{
 	.hi__title {
 		font-size: 45px;
 		margin: 0 0 10px 0;
+		-webkit-text-stroke: 2px #ffffff;
 	}
 
 	.hi__subtitle{
@@ -136,6 +139,7 @@ body{
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	font-family: Pompadur;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
@@ -315,7 +319,6 @@ body{
 		  .about {
 			padding: 0;
 			margin: 0 0 50px 0;
-			font-family: OpenSans;
 		 }
 			@media (max-width: 767.98px) {
 			  .about {
@@ -373,7 +376,7 @@ body{
 			  -webkit-box-align: center;
 			  -ms-flex-align: center;
 			  align-items: center;
-			  margin: 0px 0px 40px 0px; }
+			  margin: 0px 0px 10px 0px; }
 			  .about__icon img{
 				  width: 150px;
 			  }
@@ -384,10 +387,11 @@ body{
 				.about__icon {
 				  margin: 0px 0px 15px 0px; } }
 			.about__title {
+			  font-family: "Montserrat";
+			  font-weight: 600;
 			  margin: 0px 0px 20px 0px;
-			  font-size: 22px;
-			  text-transform: uppercase;
-			  letter-spacing: 3.52px; }
+			  font-size: 18px;
+			  text-transform: uppercase;}
 			  @media (max-width: 992.98px) {
 				.about__title {
 				  font-size: 18px;
@@ -396,48 +400,57 @@ body{
 				.about__title {
 				  margin: 0px 0px 15px 0px; } }
 			.about__text {
-			  color: #868585;
+			  color: #000000;
 			  font-size: 16px;
-			  font-weight: 500;
+			  font-weight: 300;
 			  line-height: 25px; }
 
 			  .header-block {
-				text-align: center; }
+				text-align: left; }
 				.header-block__title {
+				  font-family: "Montserrat";
 				  font-size: 34px;
-				  font-weight: 900;
-				  letter-spacing: 8.95px;
-				  text-transform: uppercase;
+				  font-weight: 600;
+				  text-transform: capitalize;
 				  position: relative;
 				  padding: 0px 0px 30px 0px; }
-				  .header-block__title:after {
-					content: '';
-					width: 81px;
-					height: 1px;
-					position: absolute;
-					left: 50%;
-					bottom: 0;
-					margin: 0px 0px 0px -40.5px;
-					background-color: #000000; }
 				.header-block__subtitle {
-				  padding: 30px 0px 0px 0px;
-				  color: #868585;
-				  font-size: 16px;
-				  font-weight: 500;
-				  line-height: 25px;
-				  max-width: 700px;
-				  margin: 0 auto; }
+					padding: 30px 0px 0px 0px;
+					color: #000;
+					font-size: 20px;
+					font-weight: 300;
+
+					max-width: 700px;
+					margin: 0 auto; }
 				  @media(max-width: 767.98px){
 					.header-block__title{
-						font-size: 25px;
-						letter-spacing: 5px;
+						font-size: 24px;
+						text-align: center;
 					}
 					.header-block__subtitle{
 						margin: 0 10px;
+						font-size: 15px;
 					}
+					.about__text{
+						font-size: 14px;
+						margin: 0 20px;
+					}
+				}
+				.header-block__subtitle li{
+					list-style-type: none;
+					text-align: left;
+					line-height: 20px;
+				}
+				.header-block__subtitle li ul{
+					margin: 0 0 30px 0;
 				}
 
 				  /*MASKS*/
+
+				.mask__mainblock{
+					background: #1A83F3;
+					padding: 50px 0 0 0;
+				}
 				.mask{
 					padding: 0;
 					font-family: OpenSans;
@@ -455,22 +468,8 @@ body{
 				.mask__row-rev{
 					flex-direction: row-reverse;
 				}
-				.mask-blue{
-					background: #0073F3;
-				}
 				.mask-last{
 					margin: 0 0 50px 0;
-				}
-				.mask__title-right{
-					background: url(/img/streak.png) no-repeat;
-					color: #ffffff;
-				}
-				.mask__title-left{
-					background: url(/img/streak-white.png) no-repeat;
-					color: #0073F3;
-				}
-				.mask__subtitle-left{
-					color: #ffffff;
 				}
 				.mask__body {
 					flex: 1 1 auto;
@@ -481,19 +480,26 @@ body{
 				.mask__body-left{
 					margin: 0 60px 0 0;
 				}
+				.mask__header-block{
+					color: #fff;
+				}
 				.mask__title {
-					font-family: Pompadur;
-					font-size: 30px;
-					margin: 0 0 30px 0;
-					background-position: center;
-					background-size: contain;
-					padding: 50px;
-					max-width: 400px;
-    				margin: 0 auto;
+					font-family: Montserrat;
+					font-size: 65px;
+					-webkit-text-fill-color: transparent;
+					-webkit-text-stroke: 2px #ffffff;
+					margin: 0 0 50px 0;
+					 font-style: normal;
+					font-weight: bold;
+					letter-spacing: 0.09em;
+					text-shadow: 7px 4px 4px rgba(255, 255, 255, 0.25);
+					 
+
 
 				}
 				.mask__subtitle {
-					font-size: 24px;
+					color: #ffffff;
+					font-size: 25px;
 					max-width: 500px;
 					margin: 0 auto;
 					text-align: left;
@@ -508,10 +514,13 @@ body{
 					.mask__body {
 						margin: 0 20px;
 					}
+					.mask__description {
+						padding: 30px 0;
+					}
 					.mask__title{
-						font-size: 25px;
-						padding: 35px;
-
+						font-size: 35px;
+						margin: 20px 0 20px 0;
+						-webkit-text-stroke: 1px #ffffff;
 					}
 					.mask__subtitle {
 						text-align: left;
@@ -957,6 +966,7 @@ body{
 	background-color: #f5f5f5;
 }
 .footer__row {
+	font-family: Pompadur;
 	display: flex;
 	height: 65px;
 	justify-content: center;
