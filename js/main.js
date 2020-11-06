@@ -9,8 +9,8 @@ ready(() => {
 	//MENU
 	let iconMenu = document.querySelector(".icon-menu");
 	let body = document.querySelector("body");
-	let menuBody = document.querySelector(".menu__body");
-	let menuList = document.querySelectorAll(".menu__list");
+	let menuBody = document.querySelector(".menu-header__menu");
+	let menuList = document.querySelectorAll(".menu-header__link");
 	iconMenu.addEventListener("click", (e) => {
 		iconMenu.classList.toggle("active");
 		body.classList.toggle("lock");
@@ -25,6 +25,14 @@ ready(() => {
 	}
 });
 
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 0) {
+		$('header').addClass('fixed');
+	}
+	else if ($(this).scrollTop() == 0) {
+		$('header').removeClass('fixed');
+	}
+});
 
 
 //SLIDER
@@ -45,14 +53,7 @@ document.querySelectorAll(".ibg").forEach(el => {
 	}
 });
 
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 502) {
-		$('#menu').addClass('fixed');
-	}
-	else if ($(this).scrollTop() < 502) {
-		$('#menu').removeClass('fixed');
-	}
-});
+
 
 //@prepros-append jq-start.js
 //@prepros-append forms.js
@@ -713,17 +714,17 @@ $(document).ready(function () {
 		var act = "touchstart";
 	}
 
-	$('.header-menu__icon').click(function (event) {
-		$(this).toggleClass('active');
-		$('.header-menu').toggleClass('active');
-		if ($(this).hasClass('active')) {
-			$('body').data('scroll', $(window).scrollTop());
-		}
+
+	$('.menu-header__icon').click(function () {
+		$('.menu-header__icon, .menu-header__menu').toggleClass('active');
 		$('body').toggleClass('lock');
-		if (!$(this).hasClass('active')) {
-			$('body,html').scrollTop(parseInt($('body').data('scroll')));
-		}
 	});
+
+	$('.menu-header__menu').click(function () {
+		$('.menu-header__icon, .menu-header__menu').removeClass('active');
+		$('body').removeClass('lock');
+	});
+
 
 	//ZOOM
 	if ($('.gallery').length > 0) {
@@ -938,14 +939,7 @@ $(document).ready(function () {
 	}
 
 
-	$(window).resize(function (event) {
-		mainblock();
-	});
-	function mainblock() {
-		var h = $(window).outerHeight();
-		$('.mainblock').css('min-height', h);
-	}
-	mainblock();
+
 
 
 

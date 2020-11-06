@@ -41,30 +41,46 @@
 <body>
 	<div class="wrapper">
 		<div class="content">
-			<div id="hi-block" class="hi">
-				<div class="container">
-					<div class="hi__row">
-						<div class="hi__image">
-							<img src="/img/memoji.png" alt="">
+			<div class="mainblock">
+				<header class="fixed">
+					<div class="container">
+						<div class="header__body">
+							<div class="header__column">
+								<a href="#" class="header__logo"><img src="img/logo.png" alt="" /></a>
+							</div>
+							<div class="header__column menu-header">
+								<div class="menu-header__icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<nav class="menu-header__menu">
+									<ul class="menu-header__list">
+										<li><a href="#" class="menu-header__link"><span>Главная</span></a></li>
+										<li><a href="#mask__block" class="menu-header__link"><span>Маски</span></a></li>
+										<li><a href="#games__block" class="menu-header__link"><span>Игры</span></a></li>
+										<li><a href="#presets__block" class="menu-header__link"><span>Пресеты</span></a></li>
+										<li><a href="#models__block" class="menu-header__link"><span>3D Модели</span></a></li>
+										<li><a href="#contacts__block" class="menu-header__link"><span>Контакты</span></a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
-						<div class="hi__body">
-							<div class="hi__title">Портфолио</div>
-							<div class="hi__subtitle">AR - Разработчик</div>
-							<div class="hi__subname">николай лавров</div>
+					</div>
+				</header>
+				<div id="hi-block" class="hi">
+					<div class="container">
+						<div class="hi__row">
+							<div class="hi__image">
+								<img src="/img/memoji.png" alt="">
+							</div>
+							<div class="hi__body">
+								<div class="hi__title">Портфолио</div>
+								<div class="hi__subtitle">AR - Разработчик</div>
+								<div class="hi__subname">николай лавров</div>
+								<div class="hi__button"><a href="#mask__block" class="hi__button-click">Примеры Работ</a></div>
+							</div>
 						</div>
-
-					</div>
-					<div id="menu" class="menu__body">
-						<a href="#mask__block" class="menu__list menu__list_1">Маски</a>
-						<a href="#games__block" class="menu__list menu__list_2">Игры</a>
-						<a href="#presets__block" class="menu__list menu__list_3">Пресеты</a>
-						<a href="#models__block" class="menu__list menu__list_4">3D Модели</a>
-						<a href="#contacts__block" class="menu__list menu__list_5">Контакты</a>
-					</div>
-					<div class="menu__icon icon-menu">
-						<span></span>
-						<span></span>
-						<span></span>
 					</div>
 				</div>
 			</div>
@@ -128,6 +144,7 @@
 							</div>
 							<div class="mask__description">
 								<div class="mask__row">
+
 									<div class="mask__video">
 										<video id="player" playsinline controls poster="/media/preview/mask1.jpg">
 											<source src="/media/mask/mask1.MOV">
@@ -208,11 +225,13 @@
 						<div class="container">
 							<div class="mask__description">
 								<div class="mask__row">
+
 									<div class="mask__video">
 										<video id="player" playsinline controls poster="/media/preview/mask5.jpg">
 											<source src="/media/mask/mask5.MOV">
 										</video>
 									</div>
+
 									<div class="mask__body">
 										<div class="mask__title ">Респиратор</div>
 										<div class="mask__subtitle">Маска с 3D моделью респиратора и зелеными линзами. При
