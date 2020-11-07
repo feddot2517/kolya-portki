@@ -34,6 +34,10 @@ background: white;
     src: url(/fonts/index.otf);
 	}
 	@font-face {
+		font-family: Flow;
+		src: url(/fonts/Flow.otf);
+	  }
+	@font-face {
 		font-family: Montserratt;
 		src: url(/fonts/Montserrat-Bold.otf);
 	}
@@ -43,10 +47,15 @@ background: white;
 }
 /*--------------------*/
 
+
 body{
 	font-family: OpenSans;
+	cursor: url(/img/curs.png), default;
 }
 
+a{
+	cursor: url(/img/point.png), pointer;
+}
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
@@ -63,18 +72,18 @@ body{
 	background-size: cover;
 }
 
-header {
+	header{
 	position: relative;
-	z-index: 50;
+	top: 0;
  }
-header.fixed{
+	header.fixed{
 	position: fixed;
 	z-index: 150;
 	width: 100%;
 	background: #0AA6FE;
 }
 	@media (max-width: 767.98px) {
-	  header {
+		header{
 		 position: fixed;
 		 top: 0;
 		 left: 0;
@@ -111,10 +120,14 @@ header.fixed{
 	position: relative;
 	z-index: 6; }
 	.header__logo img {
-	  max-width: 100%; }
+	  max-width: 100%;
+	  width: 140px; }
 	@media (max-width: 992.98px) {
 	  .header__logo {
-		 width: 125px; } }
+		 width: 125px; }
+		 .header__logo img {
+			 width: 110px;
+		 } }
  
  .menu-header__icon {
 	display: none;
@@ -261,7 +274,7 @@ header.fixed{
  
 .hi {
 	font-family: Montserratt;
-	padding: 50px 0 0 0 ;
+	padding: 80px 0 0 0 ;
 	margin: 0 0 50px 0;
 }
 
@@ -317,6 +330,7 @@ header.fixed{
 }
 .hi__button-click:hover{
 	background: #ff3c60;
+	box-shadow: 0px 2px 10px rgba(255, 88, 118, 0.69);
 }
 .hi__image img{
 	width: 450px;
@@ -511,14 +525,14 @@ header.fixed{
 					display: flex;
 					justify-content: space-between;
 				}
-				.mask__video{
-					background: url(/img/phone.png) 0 0/100% 100% no-repeat;
-					padding: 7px 15px;
-				}
+ 				.mask__video{
 				
+				}
+
 				.mask__video video {
-					width: 300px;
+					width: 280px;
 					border-radius: 50px;
+					box-shadow: 15px 15px 4px -2px rgba(0, 0, 0, 0.6);
 				}
 
 
@@ -563,6 +577,51 @@ header.fixed{
 					line-height: 40px;
 				}
 
+				.mask__test{
+					margin: 100px 0 0 0;
+					display: flex;
+					align-items: flex-end;
+				}
+				.mask__test a{
+					font-family: Flow;
+					text-transform: uppercase;
+					letter-spacing: 0.09em;
+					line-height: 30px;
+					font-size: 20px;
+					color: #ffffff;
+					margin: 0 0 0 30px;
+					text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.3);
+					transition: .4s;
+				}
+				.mask__test a:hover{
+					text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.8);
+				}
+				.mask__test img{
+					margin: 0 0 40px 0;
+				}
+
+				.mask__test-rev{
+					margin: 100px 0 0 0;
+					display: flex;
+					align-items: flex-end;
+					flex-direction: row-reverse;
+				}
+				.mask__test-rev a{
+					font-family: Flow;
+					text-transform: uppercase;
+					letter-spacing: 0.09em;
+					line-height: 30px;
+					font-size: 20px;
+					color: #ffffff;
+					text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.3);
+					transition: .4s;
+				}
+				.mask__test-rev a:hover{
+					text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.8);
+				}
+				.mask__test-rev img{
+					margin: 0 0 60px 0;
+				}
 				@media (max-width: 768px){
 					.mask__row {
 						display: block;
@@ -578,6 +637,7 @@ header.fixed{
 						font-size: 35px;
 						margin: 20px 0 20px 0;
 						-webkit-text-stroke: 1px #ffffff;
+						text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
 					}
 					.mask__subtitle {
 						text-align: left;
@@ -586,13 +646,31 @@ header.fixed{
 						max-width: 300px;
 					}
 					.mask__video video {
-						width: 200px;
-						height: 360px;
+						width: 180px;
 						border-radius: 30px;
 					}
-					.mask__video{
-						background: url(/img/phone.png) center/contain no-repeat;
-						margin: 0 auto;
+					.mask__test{
+						margin: 30px 0 0 0;
+						justify-content: center;
+					}
+					.mask__test a{
+						font-size: 15px;
+						margin: 0 0 0 10px;
+					}
+					.mask__test img{
+						width: 100px;
+						margin: 0 0 40px 0;
+					}
+					.mask__test-rev{
+						margin: 30px 0 0 0;
+						justify-content: center;
+					}
+					.mask__test-rev a{
+						font-size: 15px;
+					}
+					.mask__test-rev img{
+						width: 100px;
+						margin: 0 0 60px 0;
 					}
 				}
 				@media (max-width: 1024px){

@@ -14,6 +14,7 @@
 	<meta property="og:image" content="/img/memoji.png" />
 	<!-- Подключаем CSS -->
 	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/animate.css" />
 	<!-- Кодировка страницы -->
 	<meta charset="UTF-8">
 	<!-- Yandex.Metrika counter -->
@@ -75,10 +76,13 @@
 								<img src="/img/memoji.png" alt="">
 							</div>
 							<div class="hi__body">
-								<div class="hi__title">Портфолио</div>
-								<div class="hi__subtitle">AR - Разработчик</div>
-								<div class="hi__subname">николай лавров</div>
-								<div class="hi__button"><a href="#mask__block" class="hi__button-click">Примеры Работ</a></div>
+								<div class="hi__title wow fadeInRight">Портфолио</div>
+								<div class="hi__subtitle wow fadeInRight">AR - Разработчик</div>
+								<div class="hi__subname wow fadeInRight
+								">николай лавров</div>
+								<div class="hi__button wow fadeIn" data-wow-delay="1s"><a href="#mask__block"
+										class="hi__button-click">Примеры
+										Работ</a></div>
 							</div>
 						</div>
 					</div>
@@ -89,7 +93,7 @@
 				<div class='container'>
 					<div class="about__header-block header-block">
 						<div class="header-block__title">Обо мне</div>
-						<div class="header-block__subtitle">
+						<div class="header-block__subtitle wow bounceInLeft" data-wow-delay="1s">
 							<li>
 								<ul>Привет! Меня зовут Николай.</ul>
 								<ul>Я являюсь разработчиком масок в Инстаграме, создаю маски ЛЮБОЙ сложности от
@@ -100,7 +104,7 @@
 									интернет-магазины одежды, заведения, салоны красоты и другие.</ul>
 							</li>
 						</div>
-						<div class="about__body">
+						<div class="about__body wow bounceInUp">
 							<div class="about__row">
 								<div class="about__column">
 									<div class="about__item">
@@ -144,7 +148,6 @@
 							</div>
 							<div class="mask__description">
 								<div class="mask__row">
-
 									<div class="mask__video">
 										<video id="player" playsinline controls poster="/media/preview/mask1.jpg">
 											<source src="/media/mask/mask1.MOV">
@@ -155,6 +158,9 @@
 										<div class="mask__subtitle">Маска для Московского онлайн-магазина Yolo Shop.
 											Эффект содержит неоновую рамку с названием бренда. При моргании появляются
 											зеленые линзы.</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -176,6 +182,9 @@
 											"Мстители".
 											3D Модель повторяет действия за лицом человека.
 											При записи происходит замена голоса.</div>
+										<div class="mask__test-rev wow rotateInDownRight"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -195,6 +204,10 @@
 										<div class="mask__subtitle"> Маска с 3D ресницами и тенями для блогера Екатерины
 											Колисниченко.
 											Эффект увеличивает размер губ, глаз и уменьшает нос.</div>
+										<div class="mask__test wow fadeInLeft
+										"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -216,6 +229,9 @@
 											В неоновой рамке случайным образом выпадает напиток, на который будет действовать
 											скидка.
 											На лице присутствует эффект светомузыки.</div>
+										<div class="mask__test-rev wow fadeInRight"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -238,6 +254,9 @@
 											открытии
 											рта
 											появляется зеленый дым.</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -256,6 +275,9 @@
 										<div class="mask__title ">Моргенштерн</div>
 										<div class="mask__subtitle ">Маска с эффектом трекинга лица человека из
 											видео.</div>
+										<div class="mask__test-rev wow fadeIn"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -274,6 +296,9 @@
 										<div class="mask__title ">Тест на Вирус</div>
 										<div class="mask__subtitle">Маска с возможностью отвечать на вопросы. При наклоне головы
 											выбирается ответ: да/нет, в зависимости от выбора определяется итог опроса.</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -296,6 +321,9 @@
 											течение
 											10
 											секунд. Далее появляется правильный ответ.</div>
+										<div class="mask__test-rev wow fadeIn"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -316,11 +344,15 @@
 											<source src="/media/games/game1.mp4">
 										</video>
 									</div>
+
 									<div class="mask__body">
 										<div class="mask__title ">Роза Хутор</div>
 										<div class="mask__subtitle">Игра
 											с возможностью смены персонажей. Управление
 											осуществляется путем наклона головы. Ведется счет набранных очков и количества жизней.
+										</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
 										</div>
 									</div>
 								</div>
@@ -341,6 +373,9 @@
 										<div class="mask__subtitle ">Игра
 											, где нужно управлять автомобилем для того, чтобы объехать другие машины. Управление
 											осуществляется путем наклона головы.</div>
+										<div class="mask__test-rev wow fadeIn"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -362,7 +397,11 @@
 											правильные предметы, в обратном случае будет отниматься одна жизнь. Игра заканчивается
 											когда
 											человек поймал 3 отрицательных объекта. Ведётся счет лучшего рекорда.</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
@@ -382,6 +421,9 @@
 											Игра, оформленная в стиле известной игры Марио. Управление персонажем осуществляется
 											путем
 											моргания. Игра заканчивается, если врезаться в препятствие.</div>
+										<div class="mask__test-rev wow fadeIn"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -403,6 +445,9 @@
 											балансируя им на голове. Если объект падает, то происходит перезапуск по касанию
 											экрана.
 										</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -423,6 +468,9 @@
 											Технического
 											Университета. С помощью наклонов головы
 											можно управлять автомобилем и объезжать препятствия.</div>
+										<div class="mask__test-rev wow fadeInRight"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -444,6 +492,9 @@
 											Эффект сделан к выходу нового саундтрека "Really love", управление осуществляется с
 											помощью головы. Также разработан 3D персонаж.
 										</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -456,17 +507,20 @@
 								<div class="header-block__title">Пресеты</div>
 							</div>
 							<div class="mask__description">
-								<div class="mask__row">
+								<div class="mask__row mask__row-rev">
 									<div class="mask__video">
 										<video id="player" playsinline controls poster="/media/preview/preset1.jpg">
 											<source src="/media/presets/preset1.MOV">
 										</video>
 									</div>
-									<div class="mask__body">
+									<div class="mask__body mask__body-left">
 										<div class="mask__title ">Teal & Orange</div>
 										<div class="mask__subtitle">Пресет, в котором преимущественно используются бирюзовый и
 											оранжевый
 											цвет. По касанию экрана появляются пылинки, а также текущий день недели и время.</div>
+										<div class="mask__test-rev wow fadeInRight"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -475,37 +529,21 @@
 					<div class="mask ">
 						<div class="container">
 							<div class="mask__description">
-								<div class="mask__row mask__row-rev">
+								<div class="mask__row">
 									<div class="mask__video">
 										<video id="player" playsinline controls poster="/media/preview/preset2.jpg">
 											<source src="/media/presets/preset2.MP4">
 										</video>
 									</div>
-									<div class="mask__body mask__body-left">
+									<div class="mask__body">
 										<div class="mask__title ">Kira-Kira</div>
 										<div class="mask__subtitle">Пресет, выполненный в фиолетовых тонах.
 											Эффект
 											cодержит блестки, которые появляются на белом, а также ретушь, которая работает на двух
 											человек одновременно..</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mask">
-						<div class="container">
-							<div class="mask__description">
-								<div class="mask__row">
-									<div class="mask__video">
-										<video id="player" playsinline controls poster="/media/preview/preset3.jpg">
-											<source src="/media/presets/preset3.MOV">
-										</video>
-									</div>
-									<div class="mask__body">
-										<div class="mask__title">PolaroId</div>
-										<div class="mask__subtitle">Пресет с полароидной рамкой. По касанию появляются
-											анимированные
-											пылинки.</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -516,16 +554,18 @@
 							<div class="mask__description">
 								<div class="mask__row mask__row-rev">
 									<div class="mask__video">
-										<video id="player" playsinline controls poster="/media/preview/preset4.jpg">
-											<source src="/media/presets/preset4.MP4">
+										<video id="player" playsinline controls poster="/media/preview/preset3.jpg">
+											<source src="/media/presets/preset3.MOV">
 										</video>
 									</div>
 									<div class="mask__body mask__body-left">
-										<div class="mask__title">Labels</div>
-										<div class="mask__subtitle">
-											Пресет с ретушью на двоих и различными фразами желтого цвета, которые меняются по
-											касанию
-											экрана.</div>
+										<div class="mask__title">PolaroId</div>
+										<div class="mask__subtitle">Пресет с полароидной рамкой. По касанию появляются
+											анимированные
+											пылинки.</div>
+										<div class="mask__test-rev wow fadeInRight"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -536,15 +576,41 @@
 							<div class="mask__description">
 								<div class="mask__row">
 									<div class="mask__video">
+										<video id="player" playsinline controls poster="/media/preview/preset4.jpg">
+											<source src="/media/presets/preset4.MP4">
+										</video>
+									</div>
+									<div class="mask__body">
+										<div class="mask__title">Labels</div>
+										<div class="mask__subtitle">
+											Пресет с ретушью на двоих и различными фразами желтого цвета, которые меняются по
+											касанию
+											экрана.</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mask">
+						<div class="container">
+							<div class="mask__description">
+								<div class="mask__row mask__row-rev">
+									<div class="mask__video">
 										<video id="player" playsinline controls poster="/media/preview/preset5.jpg">
 											<source src="/media/presets/preset5.MOV">
 										</video>
 									</div>
-									<div class="mask__body">
+									<div class="mask__body mask__body-left">
 										<div class="mask__title ">360 градусов</div>
 										<div class="mask__subtitle">Винтажный пресет с фоном гор и озера 360 градусов, которые
 											меняются
 											по касанию экрана.
+										</div>
+										<div class="mask__test-rev wow fadeInRight"><img src="/img/ArrowL.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
 										</div>
 									</div>
 								</div>
@@ -554,15 +620,18 @@
 					<div class="mask mask-last">
 						<div class="container">
 							<div class="mask__description">
-								<div class="mask__row mask__row-rev">
+								<div class="mask__row">
 									<div class="mask__video">
 										<video id="player" playsinline controls poster="/media/preview/preset6.jpg">
 											<source src="/media/presets/preset6.MOV">
 										</video>
 									</div>
-									<div class="mask__body mask__body-left">
+									<div class="mask__body">
 										<div class="mask__title">Shadow</div>
 										<div class="mask__subtitle">Пресет с легкой ретушью и эффектом тени.
+										</div>
+										<div class="mask__test wow rotateInDownLeft"><img src="/img/ArrowR.png" alt="">
+											<a href="#">Попробовать<br>эффект</a>
 										</div>
 									</div>
 								</div>
@@ -699,6 +768,10 @@
 		</div>
 		<script src="/js/jquery-3.5.1.min.js"></script>
 		<script src="/js/main.js"></script>
+		<script src="/js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 		<script src="/js/plyr.polyfilled.js"></script>
 
 </body>
