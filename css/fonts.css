@@ -1,14 +1,11 @@
-@font-face {
-	font-family: Pompadur;
-	src: url(/fonts/index.otf);
-  }
+
   @font-face {
 	  font-family: Flow;
 	  src: url(/fonts/Flow.otf);
 	 }
   @font-face {
 	  font-family: Montserratt;
-	  src: url(/fonts/Montserrat-Bold.otf);
+	  src: url(/fonts/Montserrat-Bold.ttf);
   }
 @font-face {
   font-family: OpenSans;
