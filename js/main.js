@@ -236,7 +236,14 @@ $('.menu-header__menu').click(function () {
 	$('body').removeClass('lock');
 });
 
-
+$(document).ready(function () {
+	$('a[href*="#"]').click(function () {
+		var target = $(this).attr('href');
+		$('html,body').animate({
+			scrollTop: $(target).offset().top - 50
+		}, 800);
+	});
+});
 
 $('.goto').click(function () {
 	var el = $(this).attr('href').replace('#', '');
